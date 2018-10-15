@@ -4,3 +4,4 @@
 /vendor
 Thumbs
 npm-debug.log
+!.gitkeep
