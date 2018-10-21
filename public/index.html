@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html la="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico">
+    <title>
+        翻訳用分割javascript
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <h1>Chunk it!</h1>
+        <b>使い方:</b>
+        <br>(Chrome専用)一パラグラフほどの英文を入れて「分割」を押してから、右クリックして「日本語に翻訳」を押してください。
+        <form name="trans" id="trans">
+            <div class="row">
+                <div class="input-field s12">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="textarea1" class="main_text materialize-textarea" name="txt"></textarea>
+                    <label for="textarea1">ここに入力</label>
+                    <br>
+                    <a class="waves-effect waves-light btn" onclick="chunkIt();"><i class="material-icons left">link_off</i>分割</a>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </form><span id="result"></span>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  
+<script src="js/app.js"></script>
+</body>
+
+</html>
